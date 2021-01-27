@@ -30,5 +30,4 @@ public class ClientResource {
 		return ResponseEntity.ok().body(dto);
 	}
 
-
 }
