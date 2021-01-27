@@ -16,18 +16,18 @@ public class ClientDTO implements Serializable {
 	private Double income;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant brithDate;
+	private Instant birthDate;
 	private Integer children;
 	
 	public ClientDTO() {
 	}
 
-	public ClientDTO(Long id, String name, String cpf, Double income, Instant brithDate, Integer children) {
+	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.brithDate = brithDate;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 
@@ -36,7 +36,7 @@ public class ClientDTO implements Serializable {
 		this.name = entity.getName();
 		this.cpf = entity.getCpf();
 		this.income = entity.getIncome();
-		this.brithDate = entity.getBrithDate();
+		this.birthDate = entity.getBirthDate();
 		this.children = entity.getChildren();
 	}
 	
@@ -73,11 +73,11 @@ public class ClientDTO implements Serializable {
 	}
 
 	public Instant getBrithDate() {
-		return brithDate;
+		return birthDate;
 	}
 
-	public void setBrithDate(Instant brithDate) {
-		this.brithDate = brithDate;
+	public void setBrithDate(Instant birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Integer getChildren() {
@@ -86,9 +86,6 @@ public class ClientDTO implements Serializable {
 
 	public void setChildren(Integer children) {
 		this.children = children;
-	}
-	
-	
-	
+	}	
 	
 }
